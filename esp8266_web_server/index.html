@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <style>
+            div {text-align: center;}
+            p {text-align: center;} 
+            p {font-size: 200%;}
+            div {font-size: 400;}
+
+            .button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+<title>NodeMCU LED Control over INTERNET </title>
+<body>
+
+<p>Click the buttons to control your LEDs over the INTERNET</p>
+<div>
+<button class="button" onclick="document.location='https://api.thingspeak.com/update?api_key=W3J5JHZSK3BXROIB&field1=1'"><Table>Turn ON LED 1</Table></button>
+<br>
+<button class="button" onclick="document.location='https://api.thingspeak.com/update?api_key=W3J5JHZSK3BXROIB&field2=1'"><Table>Turn ON LED 2</Table></button>
+<br>
+<button class="button" onclick="document.location='https://api.thingspeak.com/update?api_key=W3J5JHZSK3BXROIB&field3=1'"><Table>Turn ON LED 3</Table></button>
+<br>
+<button class="button" onclick="document.location='https://api.thingspeak.com/update?api_key=W3J5JHZSK3BXROIB&field1=0'"><Table>Turn OFF LED 1</Table></button>
+<br>
+<button class="button" onclick="document.location='https://api.thingspeak.com/update?api_key=W3J5JHZSK3BXROIB&field2=0'"><Table>Turn OFF LED 2</Table></button>
+<br>
+<button class="button" onclick="document.location='https://api.thingspeak.com/update?api_key=W3J5JHZSK3BXROIB&field3=0'"><Table>Turn OFF LED 3</Table></button>
+</div>
+</body>
+</html>
