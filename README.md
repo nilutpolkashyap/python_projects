@@ -1,2 +1,2 @@
-# python_mini_projects
-A collection of my mini projects using Python
+# python_projects
+A collection of my projects using Python
