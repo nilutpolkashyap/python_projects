@@ -9,7 +9,7 @@ incoming_solar = 1            # incoming solar radiation
 albedo_cons = 1
 sea_elevation = 1
 
-api_key = "253126090068251f3ba4898c83f65742"
+api_key = "*****API_KEY*****"
  
 weather_url = "http://api.openweathermap.org/data/2.5/weather?"
 forecast_url = "http://api.openweathermap.org/data/2.5/forecast?"
@@ -38,6 +38,9 @@ humid_min = current_humidity
 if x["cod"] != "404":
  
     while(True):
+        weather_response = requests.get(complete_weather_url)
+        forecast_response = requests.get(complete_forecast_url)
+
         x = weather_response.json()
 
         y = x["main"]
@@ -70,8 +73,11 @@ if x["cod"] != "404":
             "\n Humidity (in percentage) = " + str(current_humidity) +
             "\n Wind Speed (in meter/seconds) = " +  str(wind_speed))
 
-        print("Temp max: ", temp_max)
-        print("Temp min : ", temp_min)
+        print(" Temp max: ", temp_max)
+        print(" Temp min : ", temp_min)
+
+        print(" Humidity max: ", humid_max)
+        print(" Humidity min : ", humid_min)
 
         # Mean Temperature
         mean_temp = (temp_max + temp_min)/2
