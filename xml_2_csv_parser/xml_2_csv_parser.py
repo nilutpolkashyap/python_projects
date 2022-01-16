@@ -2,7 +2,8 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 
 
-filename = 'songs'
+# filename = 'songs'
+filename = input("Enter name of the XML file (without .xml extension): ")
 tree = ET.parse(filename+'.xml')
 
 
