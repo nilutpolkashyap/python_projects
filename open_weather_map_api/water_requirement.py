@@ -9,7 +9,7 @@ incoming_solar = 1            # incoming solar radiation
 albedo_cons = 1
 sea_elevation = 1
 
-api_key = "*****API_KEY*****"
+api_key = "*****REPLACE WITH API KEY*****"
  
 weather_url = "http://api.openweathermap.org/data/2.5/weather?"
 forecast_url = "http://api.openweathermap.org/data/2.5/forecast?"
