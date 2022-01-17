@@ -1,7 +1,7 @@
 import requests, json, time
 import math
 
-api_key = "253126090068251f3ba4898c83f65742"
+api_key = "REPLACE WITH API KEY"
  
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
  
