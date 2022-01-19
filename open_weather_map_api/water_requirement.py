@@ -16,7 +16,7 @@ latent_heat = 2.26      # latent heat of water vapour
 sea_level = 1
 E = 1
 
-api_key = "**********API_KEY**********"
+api_key = "**********REPLACE_WITH_API_KEY**********"
  
 weather_url = "http://api.openweathermap.org/data/2.5/weather?"
 forecast_url = "http://api.openweathermap.org/data/2.5/forecast?"
