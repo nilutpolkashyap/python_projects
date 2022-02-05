@@ -4,7 +4,7 @@ import time
 import math
 import csv  
 
-api = "KCL2BN6MRRUJT8ZM9WT8RJVMQ"
+api = "********API_KEY********"
 filename = "rain_forecast_records.csv"
 
 url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/"
