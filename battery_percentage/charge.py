@@ -1,12 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jun  1 23:12:27 2021
-
-@author: nkele
-"""
-
 import psutil
-# from plyer import notification
 import time
 
 def convertTime(seconds):
