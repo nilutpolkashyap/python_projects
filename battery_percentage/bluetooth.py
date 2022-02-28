@@ -4,18 +4,22 @@ import bluetooth
 print("Searching for devices...")
 nearby_devices = bluetooth.discover_devices(lookup_names=True)
 
+num = 0
+
 #Run through all the devices found and list their name
 print("Select your device by entering its coresponding number...")
 for i in nearby_devices:
     num+=1
-    print(str(num) + ": " + bluetooth.lookup_name( i ))
+#     print(str(num) + ": " + bluetooth.lookup_name( i ))
+    print(str(num) + " : " + i[1])
    
 #Allow the user to select their Arduino
 selection = int(input("> ")) - 1
 bd_addr = nearby_devices[selection]
 port = 1
 
-print("You have selected " + bluetooth.lookup_name(nearby_devices[selection]))
+# print("You have selected " + bluetooth.lookup_name(nearby_devices[selection]))
+print("You have selected : ", nearby_devices[selection])
 
 # Connect to bluetooth address and port
 sock = bluetooth.BluetoothSocket( bluetooth.RFCOMM )
