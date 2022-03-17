@@ -22,7 +22,7 @@ city_name = input("Enter City Name : ")
 crop_name = input("Enter Crop Name : ")
 
 # *****Weather Forecast API - OPEN WEATHER MAP*****
-weather_api_key = "253126090068251f3ba4898c83f65742"
+weather_api_key = "OPEN_WEATHER_API"
  
 weather_url = "http://api.openweathermap.org/data/2.5/weather?"
 
@@ -36,7 +36,7 @@ x = weather_response.json()
 # *****Rain Forecast API - VISUAL CROSSING*****
 rain_api_key = "KCL2BN6MRRUJT8ZM9WT8RJVMQ"
 
-rain_url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/"
+rain_url = "VISUAL_CROSSING_API"
 
 complete_rain_url = rain_url + city_name + "?unitGroup=metric&key=" + rain_api_key + "&contentType=json"
 # print(complete_rain_url)
