@@ -3,7 +3,7 @@ import math
 
 api_key = "REPLACE WITH API KEY"
  
-base_url = "http://api.openweathermap.org/data/2.5/weather?"
+base_url = "OPEN_WEATHER_API"
  
 city_name = input("Enter city name : ")
  
