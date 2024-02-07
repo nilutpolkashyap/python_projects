@@ -1,0 +1,19 @@
+{
+    "name": "Alice",
+    "age": 30,
+    "city": "New York",
+    "hobbies": ["reading", "hiking", "photography"],
+    "pets": [
+      {
+        "name": "Max",
+        "type": "Dog",
+        "breed": "Golden Retriever"
+      },
+      {
+        "name": "Luna",
+        "type": "Cat",
+        "breed": "Persian"
+      }
+    ]
+  }
+  
